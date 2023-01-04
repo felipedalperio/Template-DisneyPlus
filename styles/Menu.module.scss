@@ -1,0 +1,49 @@
+.container{
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    transition: all .4s ease;
+    z-index: 999;
+
+    @media (max-width: 771px) {
+        padding: 0px 20px;
+    }
+
+    .logo{
+        opacity: 0;
+        transition: all .4s ease;
+    }   
+
+    .buttons{
+        display: flex;
+        gap:10px;
+        height: 70%;
+        button{
+            color: white;
+            font-size: 20px;
+            padding: 0px 20px;
+            border-radius: 4px;
+            transition: all .4s ease;
+
+            @media (max-width: 771px) {
+                font-size: 14px;
+                padding: 0px 10px;
+            }
+
+            &:first-child{
+                background-color: #0063E5;
+                opacity: 0;
+            }
+            &:last-child{
+                background-color: #000000CC;
+                border: 2px solid white;
+            }
+        }
+    }
+}

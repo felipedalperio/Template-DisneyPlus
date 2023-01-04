@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(34, 34, 34,0.5);
+    padding: 10px;
+    .intro{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+        h1{
+            font-weight: 400;
+            font-size: 25px;
+            @media (max-width: 661px) {
+                font-size: 18px;
+            }
+        }
+
+        .icon{
+            cursor: pointer;
+            font-size: 30px;
+        }
+    }
+    .list{
+       height: 100%;
+       padding: 0;
+       overflow: hidden;
+       font-size: 21px;
+       color: #c5c4c4;
+       transition: all .5s ease;
+       @media (max-width: 661px) {
+            font-size: 18px;
+        }
+
+       span{
+        padding: 0 20px;
+        
+       }
+       ul{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+       }
+    }
+}

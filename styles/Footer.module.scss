@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+    padding: 60px 15%;
+    color: #c5c3c3;
+
+    @media (max-width:990px) {
+        padding: 10px;
+    }
+    ul{
+        display: flex;
+        gap:10px;
+        list-style: none;
+        font-size: 14px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        li{
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+    span{
+        font-size: 14px;
+    }
+}

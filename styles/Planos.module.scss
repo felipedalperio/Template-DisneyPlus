@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    padding: 20px 20px;
+    h1{
+        font-size: 50px;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+        @media (max-width: 891px) {
+            font-size: 40px;
+        }
+    }
+    p{
+        margin: 40px 0;
+        font-size: 14px;
+        color: #bbb9be;
+        text-align: center;
+    }
+    .planos{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+
+        @media (max-width: 891px) {
+            flex-direction: column;
+            gap:100px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .plano{
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+            gap:20px;
+            .img{
+                margin-top: 12%;
+                width: 80%;
+                object-fit: contain;
+            }
+            h2{
+                margin: 0;
+                font-size: 30px;
+                font-weight: 500;
+            }
+            span{
+                font-size: 20px;
+                text-align: center;
+                width: 90%;
+                color: #bbb9be;
+                @media (max-width: 891px) {
+                    width: 80%;
+                }
+            }
+            button{
+                width: 80%;
+                border-radius: 6px;
+                margin-top: 20px;
+                padding: 20px 0;
+                color: white;
+                font-size: 20px;
+                background-color: #6421ff;
+            }
+        }
+        .plano:nth-child(2){
+           background-image: url(https://cnbl-cdn.bamgrid.com/assets/56773c66e02b16eb7603c803037f43e8572ea3a61574abd664f409a385a0b333/original);
+           background-repeat: no-repeat;
+           background-size: contain;
+           .img{
+              width: 60%;
+           }
+           @media (max-width: 891px) {
+                margin-top: 40px;
+           }
+        }
+    }
+}

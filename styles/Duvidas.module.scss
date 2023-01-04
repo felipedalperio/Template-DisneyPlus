@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+    margin-bottom: 40px;
+    h1{
+        font-size: 40px;
+        font-weight: 500;
+        
+        @media (max-width: 661px) {
+            font-size: 30px;
+        }
+    }
+    .duvidas{
+
+        display: flex;
+        flex-direction: column;
+        padding: 0px 100px;
+        gap:10px;
+        width: 100%;
+
+        @media (max-width:700px) {
+            padding: 0px 10px;
+        }
+    }
+}
