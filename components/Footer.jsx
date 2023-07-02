@@ -8,6 +8,7 @@ export default function Footer() {
             src="/images/logo.png"
             width={90}
             height={50}
+            alt="imagem"
        />
        <ul>
             <li>Termos e Condições de Uso</li>

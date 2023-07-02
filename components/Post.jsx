@@ -9,6 +9,7 @@ export default function Post({props}) {
             loader={() => props.img}
             height={300}
             width={300}
+            alt="imagem"
         />
     </div>
   )

@@ -8,7 +8,7 @@ export default function Devices() {
         <h1>Disponível nos seus dispositivos favoritos</h1>
         <div className={styles.devices}>
         {devices && devices.map((item,key)=> (
-            <div className={styles.device}>
+            <div className={styles.device} key={key}>
                 <Image className={styles.img}
                     src={item.img}
                     loader={() => item.img}
@@ -18,7 +18,7 @@ export default function Devices() {
                 />
                 <h2>{item.title}</h2>
                 {item.devices.map((item,key) =>(
-                    <span>{item}</span>
+                    <span key={key}>{item}</span>
                 ))}
             </div>   
         ))}

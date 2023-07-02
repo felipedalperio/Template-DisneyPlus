@@ -20,7 +20,7 @@ export default function Duvida({props}) {
             {props.items.length > 0 && (
                 <ul>
                     {props.items.map((item,key) =>(
-                        <li>{item}</li>
+                        <li key={key}>{item}</li>
                     ))}
                 </ul>
             )}

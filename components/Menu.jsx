@@ -38,6 +38,7 @@ export default function Menu() {
         src="/images/logo.png"
         width={90}
         height={50}
+        alt="imagem"
        />
       </div>
       <div className={styles.buttons}>
